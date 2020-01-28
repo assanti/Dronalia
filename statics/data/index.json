@@ -1,0 +1,69 @@
+{
+  "drones":{
+    "dron":[
+      {
+        "id":1,
+        "name":"Dron - SpyBoy Ro-741",
+        "descripcion":"Dies irae malleus maleficarum es Dies irae malleus Dies irae malleus Dies irae malleus maleficarum es",
+        "precio":"45,65€",
+        "cover":"./img/1.jpg",
+      },
+      {
+        "id":2,
+        "name":"Rever Professional X-176",
+        "descripcion":"Dies irae malleus maleficarum es Dies irae malleus Dies irae malleus Dies irae malleus maleficarum es",
+        "precio":"129,95€",
+        "cover":"./img/2.png",
+      },
+      {
+        "id":3,
+        "name":"Dron professional vc-076e",
+        "descripcion":"Dies irae malleus maleficarum es Dies irae malleus Dies irae malleus Dies irae malleus maleficarum es",
+        "precio":"79,59€",
+        "cover":"./img/3.jpg",
+      },
+      {
+        "id":4,
+        "name":"Drontic Kit Toy",
+        "descripcion":"Dies irae malleus maleficarum es Dies irae malleus Dies irae malleus Dies irae malleus maleficarum es",
+        "precio":"19,95€",
+        "cover":"./img/4.jpg",
+      },
+      {
+        "id":5,
+        "name":"Dron Traver Other worlds x-012",
+        "descripcion":"Dies irae malleus maleficarum es Dies irae malleus Dies irae malleus Dies irae malleus maleficarum es",
+        "precio":"12.779,95€",
+        "cover":"./img/5.jpg",
+      },
+      {
+        "id":6,
+        "name":"Dron makeLove m-2",
+        "descripcion":"Dies irae malleus maleficarum es Dies irae malleus Dies irae malleus Dies irae malleus maleficarum es",
+        "precio":"169,89€",
+        "cover":"./img/6.jpg",
+      },
+      {
+        "id":7,
+        "name":"Dron rob y12",
+        "descripcion":"Dies irae malleus maleficarum es Dies irae malleus Dies irae malleus Dies irae malleus maleficarum es",
+        "precio":"59,99€",
+        "cover":"./img/7.jpg",
+      },
+      {
+        "id":8,
+        "name":"Mavic Pro - s29",
+        "descripcion":"Dies irae malleus maleficarum es Dies irae malleus Dies irae malleus Dies irae malleus maleficarum es",
+        "precio":"299,95€",
+        "cover":"./img/8.png",
+      },
+      {
+        "id":9,
+        "name":"BlueTech Net-89x2",
+        "descripcion":"Dies irae malleus maleficarum es Dies irae malleus Dies irae malleus Dies irae malleus maleficarum es",
+        "precio":"79,95€",
+        "cover":"./img/9.jpg",
+      },
+    ]
+  }
+}

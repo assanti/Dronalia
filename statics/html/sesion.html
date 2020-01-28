@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dronalia</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://kit.fontawesome.com/f90d3bf50d.js" crossorigin="anonymous"></script>
+
+    <style media="screen">
+      /* The side navigation menu */
+      .sidenav {
+        height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Stay on top */
+        top: 0; /* Stay at the top */
+        left: 0;
+        background-color: #111; /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+      }
+
+      /* The navigation menu links */
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+
+      /* When you mouse over the navigation links, change their color */
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+
+      /* Position and style the close button (top right corner) */
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+      /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+      #main {
+        transition: margin-left .5s;
+        padding: 20px;
+      }
+
+      /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+    </style>
+
+  </head>
+  <body>
+    <script>
+      /* Set the width of the side navigation to 250px */
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "350px";
+      }
+
+      /* Set the width of the side navigation to 0 */
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+
+
+    </script>
+
+    <div>
+
+    <div id="mySidenav" class="sidenav" style="z-index: 100;">
+     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+     <div class="">
+       <a href="sesion.html"> <h5> Registrar/iniciar sesión </h5> </a>
+     </div>
+     <li>
+     <a href="#">Categorias</a>
+     <a href="#">Servicios</a>
+     <a href="#">accesorios</a>
+     <a href="#">Drones</a>
+     </li>
+    </div>
+
+    <!-- Use any element to open the sidenav -->
+    <div class="col-md-12">
+      <span onclick="openNav()" style="position: fixed; top: 2.5%; z-index: 75;"> <img src="../img/menu.png" width="5%"> </span>
+    </div>
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main">
+
+    </div>
+    </div>
+
+    <div class="col-md-12">
+      <header class=" text-center">
+        <a href="../index.html">
+          <img src="../img/logo.png" alt="logo" width="25%">
+        </a>
+      </header>
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+         <li class="nav-item active">
+
+         </li>
+       </ul>
+         <span class="navbar-text">
+           <a href="sesion.html">Registrar/Iniciar Sesión</a>
+           <a href="cesta.html">
+             <i class="fas fa-shopping-cart"></i>
+           </a>
+         </span>
+       </div>
+      </nav>
+
+      <br><br>
+
+      <div class="col-md-12">
+        <h2 class="text-center">Registrar o iniciar sesión</h2>
+        <br>
+        <div class="row">
+        <div class="col-md-6">
+
+            <div class="card-block">
+
+
+
+              <div class="card">
+
+                <h4 class="card-title text-center">Iniciar sesión</h4>
+
+                <form class="text-center" action="#" method="post">
+                  <div class="form-group">
+                    <label for="email">Correo: </label>
+                    <input type="email" name="correo" value="correo">
+                  </div>
+                  <div class="form-group">
+                    <label for="pass">Contraseña: </label>
+                    <input type="password" name="pass" value="pass">
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" name="check" value="check">
+                    <label for="checkbox"> Recordar sesión</label>
+                  </div>
+                </form>
+                <br>
+                <div class="text-center">
+                  <button class="btn btn-primary">iniciar sesión</button>
+
+                </div>
+
+
+              </div>
+            </div>
+
+        </div>
+
+
+        <div class="col-md-6 text-center">
+          <div class="card">
+
+          <h4>¿Eres la primera vez que vas a comprar en dronalia? ¡REGISTRATE! Es gratis</h4>
+          <br><br>
+
+          <div>
+            <button type="button" class="btn btn-primary" name="button">Registrar</button>
+
+          </div>
+
+        </div>
+      </div>
+        </div>
+      </div>
+
+      <br><br>
+
+      <footer class="page-footer font-small blue pt-4">
+        <div class="container-fluid text-center text-md-left">
+
+
+        <div class="row">
+          <div class="col-md-3 mt-md-0 mt-3">
+            <img src="../img/logo.png" width="75%" alt="">
+          </div>
+
+          <hr class="clearfix w-100 d-md-none pb-3">
+
+          <div class="col-md-3 mb-md-0 mb-3">
+          <h5>Contacta</h5>
+          <ul class="list-unstyled">
+
+            <li><a href="https://www.youtube.com/watch?v=8IP4EaXdk5M">Empresa</a></li>
+            <li><a href="https://www.youtube.com/watch?v=8IP4EaXdk5M">Trabaja con nosotr@s</a></li>
+            <li><a href="https://www.youtube.com/watch?v=8IP4EaXdk5M">Atención al cliente</a></li>
+            <li><a href="https://www.youtube.com/watch?v=8IP4EaXdk5M">Monta tu franquicia</a></li>
+          </ul>
+          </div>
+          <div class="col-md-3 mb-md-0 mb-3">
+            <h5>FAQ</h5>
+          <ul class="list-unstyled">
+
+            <li><a href="https://www.youtube.com/watch?v=8IP4EaXdk5M">Contacta con nosotr@s</a></li>
+            <li><a href="https://www.youtube.com/watch?v=8IP4EaXdk5M">¿Que es Dronalia?</a></li>
+            <li><a href="https://www.youtube.com/watch?v=8IP4EaXdk5M">Metodos de pago</a></li>
+            <li><a href="https://www.youtube.com/watch?v=8IP4EaXdk5M">Envios</a></li>
+          </ul>
+          </div>
+          <div class="col-md-3 mb-md-0 mb-3">
+            <h5>Dronalia</h5>
+          <ul class="list-unstyled">
+
+            <li>Calle Jesuscristo nº666</li>
+            <li>Mallorca, España</li>
+            <li>07666</li>
+            <li>tel: 971 666 666</li>
+          </ul>
+          </div>
+        </div>
+        </div>
+        <br>
+      </footer>
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    </body>
+</html>
